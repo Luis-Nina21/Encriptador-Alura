@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Encriptador-Alura/styles.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <div class="encabezado"><img src="../Encriptador-Alura/img/Logo.png" alt=""></div>
+        <textarea name="" id="textoEntrada" cols="30" rows="10" placeholder="ingresa el texto aqui"></textarea>
+            <p></p>
+        <section class="contenedor-izquierdo">
+            <button class="Encriptar" onclick="encriptarTexto()">Encriptar</button>
+            <button class="Desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+        </section>
+        <section>
+            <img src="../Encriptador-Alura/img/Muñeco.png" alt="">
+            <textarea name="" id="textoSalida" cols="30" rows="10"></textarea>
+            <button class="Copiar" onclick="copiarTexto()">Copiar</button>
+        </section>
+    </main>   
 </body>
+ 
+<script src="../Encriptador-Alura/app.js"></script>
 </html>
