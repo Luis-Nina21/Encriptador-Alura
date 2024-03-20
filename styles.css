@@ -156,8 +156,6 @@ margin-top: 500px;
         padding-right: 50px; /* Agregar un relleno alrededor del contenedor principal */
     }
 
-    header {
-    }
 
     .contenedor-izquierdo {
         width: 100%; /* Permitir que el contenedor izquierdo ocupe todo el ancho */
@@ -173,6 +171,12 @@ margin-top: 500px;
 
     #boton-desencriptar {
         margin-top: 10px; /* Separación entre los botones */
+    }
+    #boton-desencriptar{
+        padding: 20px 130px;
+    }
+    #boton-encriptar{
+        padding: 20px 148px;
     }
 
     .contenedor-derecho {
@@ -200,11 +204,17 @@ margin-top: 500px;
         display: none; /* Ocultar elementos innecesarios */
     }
 
+
     #textoEntrada {
         width: 100%; /* Ajustar el ancho del textarea al 100% del contenedor */
         max-width: 400px; /* Establecer un ancho máximo */
         margin: 0 auto; /* Centrar el textarea */
     }
+    #textoSalida{
+        height: 100px;
+    }
+    
+
 }
 
 
