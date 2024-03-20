@@ -147,11 +147,16 @@ margin-top: 500px;
         margin: 0; /* Eliminar los márgenes del cuerpo */
     }
 
-    main {
+    main{
+        display: flex;
+        margin: none;
         display: flex;
         flex-direction: column;
         width: 100%; /* Ajustar el ancho del contenedor principal al 100% del viewport */
-        padding: 20px; /* Agregar un relleno alrededor del contenedor principal */
+        padding-right: 50px; /* Agregar un relleno alrededor del contenedor principal */
+    }
+
+    header {
     }
 
     .contenedor-izquierdo {
@@ -163,27 +168,17 @@ margin-top: 500px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
-    }
-
-    .botones-encriptar button {
-        width: 200px; /* Ancho fijo para los botones */
-        margin: 10px;
+        margin-top: 50px; /* Ajustar el margen superior */
     }
 
     #boton-desencriptar {
         margin-top: 10px; /* Separación entre los botones */
-        text-align: center;
-    }
-    #boton-encriptar{
-        text-align: center;
-
     }
 
     .contenedor-derecho {
         width: auto;
         margin-top: 20px;
-        height: 450px;
+        height: 200px;
     }
 
     #mensajeTitulo {
@@ -204,7 +199,15 @@ margin-top: 500px;
     #imagenMensaje {
         display: none; /* Ocultar elementos innecesarios */
     }
+
+    #textoEntrada {
+        width: 100%; /* Ajustar el ancho del textarea al 100% del contenedor */
+        max-width: 400px; /* Establecer un ancho máximo */
+        margin: 0 auto; /* Centrar el textarea */
+    }
 }
+
+
 
 
 
