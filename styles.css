@@ -132,5 +132,82 @@ margin-top: 500px;
     color: rgba(10, 56, 113, 1);
 }
 #Copiar:hover{
-    background-color: #F3F5FC;
+    background-color: #dce2f5;
 }
+
+
+
+/*---------------------------------------*/
+
+/* Estilos para pantallas pequeñas (teléfonos y tablets) */
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%; /* Ajustar el ancho del cuerpo al 100% del viewport */
+        padding: 0; /* Eliminar el relleno del cuerpo */
+        margin: 0; /* Eliminar los márgenes del cuerpo */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%; /* Ajustar el ancho del contenedor principal al 100% del viewport */
+        padding: 20px; /* Agregar un relleno alrededor del contenedor principal */
+    }
+
+    .contenedor-izquierdo {
+        width: 100%; /* Permitir que el contenedor izquierdo ocupe todo el ancho */
+    }
+
+    .botones-encriptar {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .botones-encriptar button {
+        width: 200px; /* Ancho fijo para los botones */
+        margin: 10px;
+    }
+
+    #boton-desencriptar {
+        margin-top: 10px; /* Separación entre los botones */
+        text-align: center;
+    }
+    #boton-encriptar{
+        text-align: center;
+
+    }
+
+    .contenedor-derecho {
+        width: auto;
+        margin-top: 20px;
+        height: 450px;
+    }
+
+    #mensajeTitulo {
+        font-size: 20px;
+    }
+    #mensajetexto {
+        font-size: 50px;
+        margin-top: 10px; /* Separación entre el título y el texto */
+    }
+
+    #mensajeTitulo,
+    #mensajeTexto {
+        display: block; /* Mostrar título y texto */
+    }
+
+    #Copiar,
+    #textoSalida,
+    #imagenMensaje {
+        display: none; /* Ocultar elementos innecesarios */
+    }
+}
+
+
+
+
+
+

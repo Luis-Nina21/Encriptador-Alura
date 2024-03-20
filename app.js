@@ -4,8 +4,8 @@ window.onload = function() {
     document.getElementById("Copiar").style.display = "none";
     document.getElementById("imagenMensaje").style.marginTop="80px";
     document.getElementById("imagenMensaje").style.marginBottom="40px";
-    document.getElementById("mensajeTexto").style.padding="20px 40px 30px 40px";
-    document.getElementById("mensajeTexto").style.fontSize="14px"
+    document.getElementById("mensajetexto").style.padding="20px 40px 30px 40px";
+    document.getElementById("mensajetexto").style.fontSize="14px"
 
 }
 
@@ -36,7 +36,7 @@ function encriptarTexto() {
     document.getElementById("textoSalida").style.display = "block";
     document.getElementById("imagenMensaje").style.display = "none";
     document.getElementById("mensajeTitulo").style.display = "none";
-    document.getElementById("mensajeTexto").style.display = "none";
+    document.getElementById("mensajetexto").style.display = "none";
     document.getElementById("Copiar").style.display = "block";
     document.getElementById("Copiar").style.margin="0 auto"
     document.getElementById("Copiar").style.float="botton";
@@ -72,11 +72,11 @@ function desencriptarTexto() {
     // Mostrar el texto desencriptado en el primer textarea
     document.getElementById('textoSalida').value = textoDesencriptado;
 
-    
+
     document.getElementById("textoSalida").style.display = "block";
     document.getElementById("imagenMensaje").style.display = "none";
     document.getElementById("mensajeTitulo").style.display = "none";
-    document.getElementById("mensajeTexto").style.display = "none";
+    document.getElementById("mensajetexto").style.display = "none";
     document.getElementById("Copiar").style.display = "block";
     document.getElementById("Copiar").style.margin="0 auto"
     document.getElementById("Copiar").style.float="botton";
@@ -115,5 +115,9 @@ function cambiarEstiloTexto() {
 
 // Llamar a la función cuando se haya cargado completamente la página
 document.addEventListener("DOMContentLoaded", cambiarEstiloTexto);
+
+
+
+
 
 
