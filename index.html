@@ -13,16 +13,18 @@
         <section class="contenedor-izquierdo">
             <textarea name="" id="textoEntrada" cols="30" rows="10" placeholder="ingresa el texto aqui"></textarea>
             <p></p>
-            <button class="Encriptar" onclick="encriptarTexto()">Encriptar</button>
-            <button class="Desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
-        </section>
-        <section class="contenedor-derecho">
-            <textarea name="" id="textoSalida" cols="30" rows="5"></textarea>
-            <img src="../Encriptador-Alura/img/Muñeco.png" alt="">
-            <h2>Ningun mensaje fue encontrado</h2>
-            <p>Ingresa el texto que desees encriptar o desencriptar</p>
-            <button class="Copiar" onclick="copiarTexto()">Copiar</button>
-        </section>
+            <div class="botones-encriptar">
+                <button id="boton-encriptar" onclick="encriptarTexto()">Encriptar</button>
+                <button id="boton-desencriptar" onclick="desencriptarTexto()">Desencriptar</button>    
+            </div>
+          </section>
+        <aside class="contenedor-derecho">
+            <textarea name="" id="textoSalida" cols="15" rows="14"></textarea>
+            <img id="imagenMensaje" src="../Encriptador-Alura/img/Muñeco.png" alt="">
+            <h2 id="mensajeTitulo">Ningun mensaje fue encontrado</h2>
+            <p id="mensajeTexto">Ingresa el texto que desees encriptar o desencriptar</p>
+            <button id="Copiar" onclick="copiarTexto()">Copiar</button>
+        </aside>
     </main>   
 </body>
  
