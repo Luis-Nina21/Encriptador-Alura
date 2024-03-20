@@ -3,11 +3,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-    /* Encriptador - 1 Desktop */
     position: relative;
-    width: 1348px;
-    height: 1024px;
-    /* Light blue/light-blue-100 */
     background: #F3F5FC;
     margin: 0;
     border: 0;
@@ -22,6 +18,10 @@ main{
     display: flex;
     margin: 30px 70px;
 }
+
+
+
+/*----------estilos para el contenedor izquierdo--------*/
 
 .contenedor-izquierdo{
     width: 70%;
@@ -44,15 +44,6 @@ border: none;
 
 
 /*----------------------------------------------------------*/
-
-
-
-
-
-
-
-
-
 
 
 .botones-encriptar{
@@ -91,10 +82,13 @@ margin-top: 500px;
 
 }
 
+#texto-info{
+    color:rgba(10, 56, 113, 0.886) ;
+    font-size: 11px;
+    padding-left: 10px;
+}
 
-
-
-
+/*-----Estilos para el aside derecho------*/
 
 .contenedor-derecho{
     width: 30%;
@@ -136,15 +130,39 @@ margin-top: 500px;
 }
 
 
+/*----------estilos para e l footer--------*/
+
+footer{
+    background-color: rgba(10, 56, 113, 1);
+    margin: 0px;
+    padding: 40px;
+    width: 1269px;
+}
+.iconos-redes{
+  text-align: center;
+}
+.iconos-redes svg{
+    padding: 8px;
+    padding-bottom: 3px;
+    color: #F3F5FC;
+}
+.iconos-redes svg:hover{
+    opacity: 0.3;
+}
+footer p{
+    text-align: center;
+    color: #F3F5FC;
+    font-size: 14px;
+}
+
 
 /*---------------------------------------*/
 
-/* Estilos para pantallas pequeñas (teléfonos y tablets) */
 @media screen and (max-width: 480px) {
     body {
-        width: 100%; /* Ajustar el ancho del cuerpo al 100% del viewport */
-        padding: 0; /* Eliminar el relleno del cuerpo */
-        margin: 0; /* Eliminar los márgenes del cuerpo */
+        width: 100%; 
+        padding: 0; 
+        margin: 0; 
     }
 
     main{
@@ -152,8 +170,8 @@ margin-top: 500px;
         margin: none;
         display: flex;
         flex-direction: column;
-        width: 100%; /* Ajustar el ancho del contenedor principal al 100% del viewport */
-        padding-right: 50px; /* Agregar un relleno alrededor del contenedor principal */
+        width: 100%;
+        padding-right: 50px; 
     }
 
 
@@ -170,7 +188,7 @@ margin-top: 500px;
     }
 
     #boton-desencriptar {
-        margin-top: 10px; /* Separación entre los botones */
+        margin-top: 10px; /
     }
     #boton-desencriptar{
         padding: 20px 130px;
@@ -190,30 +208,34 @@ margin-top: 500px;
     }
     #mensajetexto {
         font-size: 50px;
-        margin-top: 10px; /* Separación entre el título y el texto */
+        margin-top: 10px; 
     }
 
     #mensajeTitulo,
     #mensajeTexto {
-        display: block; /* Mostrar título y texto */
+        display: block; 
     }
 
     #Copiar,
     #textoSalida,
     #imagenMensaje {
-        display: none; /* Ocultar elementos innecesarios */
+        display: none; 
     }
 
 
     #textoEntrada {
-        width: 100%; /* Ajustar el ancho del textarea al 100% del contenedor */
-        max-width: 400px; /* Establecer un ancho máximo */
-        margin: 0 auto; /* Centrar el textarea */
+        width: 100%; 
+        max-width: 400px; 
+        margin: 0 auto; 
     }
     #textoSalida{
         height: 100px;
     }
     
+    footer{
+        width: 450px;
+        margin: 0px;
+    }
 
 }
 

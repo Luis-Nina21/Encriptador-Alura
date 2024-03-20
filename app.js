@@ -24,8 +24,8 @@ function encriptarTexto() {
     let textoEncriptado = '';
     for (let i = 0; i < texto.length; i++) {
         let charCode = texto.charCodeAt(i);
-        if (charCode >= 97 && charCode <= 122) { // Si es una letra minúscula
-            charCode = ((charCode - 97 + 13) % 26) + 97; // Aplicar cifrado César con desplazamiento de 13 posiciones
+        if (charCode >= 97 && charCode <= 122) { 
+            charCode = ((charCode - 97 + 13) % 26) + 97;
         }
         textoEncriptado += String.fromCharCode(charCode);
     }
@@ -107,13 +107,12 @@ function copiarTexto() {
 function cambiarEstiloTexto() {
     var textarea = document.getElementById("textoEntrada");
     var textarea2 = document.getElementById("textoSalida");
-    textarea.style.fontSize = "30px"; // Cambiar el tamaño del texto
-    textarea.style.color = "rgba(10, 56, 113, 1)"; // Cambiar el color del texto
-    textarea2.style.fontSize = "30px"; // Cambiar el tamaño del texto
-    textarea2.style.color = "rgba(10, 56, 113, 1)"; // Cambiar el color del texto
+    textarea.style.fontSize = "30px"; 
+    textarea.style.color = "rgba(10, 56, 113, 1)"; 
+    textarea2.style.fontSize = "30px"; 
+    textarea2.style.color = "rgba(10, 56, 113, 1)"; 
 }
 
-// Llamar a la función cuando se haya cargado completamente la página
 document.addEventListener("DOMContentLoaded", cambiarEstiloTexto);
 
 
